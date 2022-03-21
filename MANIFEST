@@ -1,0 +1,8 @@
+# ~/bin/accelkeys.py
+
+src/lib.rs
+src/bin/accelkeys.rs
+
+Cargo.toml
+
+# vim: syn=yaml
