@@ -1,8 +1,0 @@
-Initial No
-Max Supportable No
-Initial Memory Size
-Mutation Rate
-Survival Rate
-Start
-Pa&use
-Zoom

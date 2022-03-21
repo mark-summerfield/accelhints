@@ -1,0 +1,441 @@
+Calculate
+Load...
+Save
+Save &As...
+Copy to Clipboard
+Set Options...
+Help
+About
+Quit
+
+Alphabet
+Predefined Accelerators
+Max. Recursion Depth
+Max. Candidates
+Automatic Timeout
+Prompt to Save Unsaved Changes on Exit
+Restore Workspace at Startup
+Load Last File at Startup
+Show Help at Startup
+
+Add
+Edit
+Delete
+
+Delete
+Edit
+Add
+
+Cu&t
+&Copy
+Paste
+Find and Replace
+Replace
+
+Basic
+Advanced
+Automatically Save on Exit
+Restore Workspace on Startup
+Remember Clipboard between Sessions
+
+Notebook
+Edit
+Clipboard
+Promotion
+Notes
+Calendar
+Calendar &View
+Calendar &Goto
+Note
+Clipboard
+Edit
+Search
+Style
+Font
+Alignment
+Category
+
+Type
+Title
+Forenames
+Surname
+Company
+Email
+Phone
+Mobile
+URL
+Find
+New
+Duplicate
+Update
+Delete
+Configure
+Statistics
+Export
+Open
+Save
+Quit
+
+Remaining Issues
+Type
+Title
+Forenames
+Surname
+Company
+Email
+Phone
+Mobile
+URL
+Find
+New
+Duplicate
+Update
+Delete
+Configure
+Statistics
+Export
+Open
+Save
+Quit
+
+Lists
+New List
+Duplicate List
+Delete List
+Items
+New
+Rename
+Up
+Down
+Delete
+Configure
+About
+Quit
+
+Initial No
+Max Supportable No
+Initial Memory Size
+Mutation Rate
+Survival Rate
+Start
+Pa&use
+Zoom
+
+General
+Remember Geometry
+Start With Editor &Window
+Start With &Shell Window
+Automatically Hide the Find and Replace dialog
+Input prompt
+Output prompt
+&Python executable
+Working directory
+Show Window Information at Startup
+Max Tooltip Length
+Max Lines to Scan
+Highlighting
+Tab width
+Font
+On New File
+At Startup
+Python Documentation
+
+Undo
+Redo
+&Copy
+Cu&t
+&Paste
+Select &All
+Complete
+&Find
+Find &Next
+R&eplace Next
+Goto Line
+Goto &Matching
+Indent Region
+Unindent Region
+Comment Region
+Uncomment Region
+
+Add &Top-Level Term
+Add Sub-Term &of
+Add &Child-Term of
+&Add Sibling-Term of
+&Find
+&Insert Unicode Character
+&Bold
+Ita&lic
+&Underline
+Stri&ke-out
+Su&perscript
+&Subscript
+&No Superscript or Subscript
+&Monospace
+Sans S&erif
+Se&rif
+
+Toolbars
+Status Bar
+Sidebar
+Stop
+Reload
+Text Size
+Page Style
+Character Encoding
+Page Source
+Full Screen
+
+New
+Open...
+Recent Documents
+Wizards
+Close
+Save
+Save As...
+Save All
+Reload
+Versions...
+Export...
+Export as PDF...
+Send
+Properties...
+Digital Signatures...
+Templates
+Preview in Web Browser
+Page Preview
+Print...
+Printer Settings...
+Exit
+
+Undo
+Redo
+Cut
+Copy
+Paste
+Paste Special...
+Select Text
+Select All
+Changes
+Compare Documents...
+Find and Replace
+Navigator
+AutoText...
+Exchange Database...
+Fields...
+Footnote...
+Index Entry...
+Bibliography Entry
+Hyperlink
+Links...
+Plug-in
+ImageMap
+Object
+
+Print Layout
+Web Layout
+Toolbars
+Status Bar
+Input Method Status
+Ruler
+Text Boundaries
+Field Shadings
+Field Names
+Nonprinting Characters
+Hidden Paragraphs
+Data Sources
+Full Screen
+Zoom
+
+Manual Break
+Fields
+Special Character...
+Formatting Mark
+Section...
+Hyperlink
+Header
+Footer
+Footnote
+Caption
+Bookmark
+Cross-reference...
+Note...
+Script...
+Indexes and Tables
+Envelope...
+Frame...
+Table...
+Horizontal Ruler...
+Picture
+Movie and Sound
+Object
+Floating Frame
+File...
+
+Default Formatting
+Character...
+Paragraph...
+Bullets and Numbering...
+Page...
+Title Page
+Change Case
+Columns
+Sections...
+Styles and Formatting
+AutoFormat
+Anchor
+Wrap
+Alignment
+Arrange
+Flip
+Group
+Object
+Frame...
+Picture...
+
+Insert
+Delete
+Select
+Merge Cells
+Split Cells
+Protect Cells
+Merge Table
+Split Table
+AutoFormat...
+Autofit
+Heading rows repeat
+Convert
+Sort...
+Formula
+Number Format...
+Table Boundaries
+Table Properties...
+
+Spellcheck...
+Language
+Word Count
+AutoCorrect...
+Outline Numbering...
+Footnotes...
+Gallery
+Media Player
+Bibliography Database
+Mail Merge Wizard...
+Sort...
+Calculate
+Update
+Macros
+Extension Manager...
+XML Filter Settings...
+Customize...
+Options...
+
+&Undo
+&Redo
+Cu&t
+&Copy
+&Paste
+Paste Special...
+Select Text
+Select All
+Changes
+Compare Documents...
+Find and Replace
+Navigator
+AutoText...
+Exchange Database...
+Fields...
+Footnote...
+Index Entry...
+Bibliography Entry
+Hyperlink
+Links...
+Plug-in
+ImageMap
+Object
+
+&Fields
+Special Character...
+Formatting Mark
+Section...
+Hyperlink
+Header
+Footer
+Footnote
+Caption
+Bookmark
+Cross-reference...
+&Note...
+Script...
+Indexes and Tables
+Envelope...
+Frame...
+Table...
+Horizontal Ruler...
+Picture
+Movie and Sound
+Object
+Floating Frame
+
+Undo
+Redo
+Repeat
+Cu&t
+&Copy
+Paste
+Paste Special...
+Select All
+Changes
+Compare Document...
+Find and Replace...
+Navigator
+Headers and Footers...
+Fill
+Delete Contents...
+Delete Cells...
+Sheet
+Delete Manual Break
+Links...
+Plug-in
+ImageMap
+Object
+
+Undo
+Redo
+Repeat
+Cu&t
+&Copy
+Paste
+Paste Special...
+Select All
+Changes
+Compare Document...
+Find and Replace...
+Navigator
+Headers and Footers...
+Fill
+Delete Contents...
+Delete Cells...
+Sheet
+Delete Manual Break
+Links...
+Plug-in
+ImageMap
+Object
+
+Undo
+Redo
+&Copy
+Cu&t
+&Paste
+Select &All
+Complete
+&Find
+Find &Next
+R&eplace Next
+Goto Line
+Goto &Matching
+Indent Region
+Unindent Region
+Comment Region
+Uncomment Region
+

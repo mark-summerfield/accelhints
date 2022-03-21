@@ -1,9 +1,0 @@
-&Calculate
-&Load...
-&Save
-Save &As...
-Copy &to Clipboard
-Set &Options...
-&Help
-A&bout
-&Quit

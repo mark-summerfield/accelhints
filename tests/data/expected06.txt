@@ -1,5 +1,0 @@
-&Basic
-&Advanced
-Automatically &Save on Exit
-Restore &Workspace on Startup
-&Remember Clipboard between Sessions
