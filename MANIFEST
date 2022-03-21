@@ -1,8 +1,6 @@
-# ~/bin/accelkeys.py
-
 src/lib.rs
 src/bin/accelkeys.rs # TODO implement same API as ~/bin/accelkeys.py
-
+tests/test1.rs
 
 Cargo.toml
 
