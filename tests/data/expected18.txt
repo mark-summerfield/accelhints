@@ -1,0 +1,14 @@
+&Print Layout
+&Web Layout
+&Toolbars
+St&atus Bar
+&Input Method Status
+&Ruler
+Text &Boundaries
+&Field Shadings
+Field &Names
+Nonprinting &Characters
+&Hidden Paragraphs
+&Data Sources
+Full &Screen
+&Zoom

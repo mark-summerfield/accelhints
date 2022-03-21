@@ -1,0 +1,8 @@
+Initial &No
+&Max Supportable No
+&Initial Memory Size
+Mutation &Rate
+&Survival Rate
+S&tart
+Pa&use
+&Zoom

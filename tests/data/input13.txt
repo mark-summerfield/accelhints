@@ -1,0 +1,16 @@
+Undo
+Redo
+&Copy
+Cu&t
+&Paste
+Select &All
+Complete
+&Find
+Find &Next
+R&eplace Next
+Goto Line
+Goto &Matching
+Indent Region
+Unindent Region
+Comment Region
+Uncomment Region

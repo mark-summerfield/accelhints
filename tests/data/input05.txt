@@ -1,0 +1,5 @@
+Cu&t
+&Copy
+Paste
+Find && Replace
+Replace

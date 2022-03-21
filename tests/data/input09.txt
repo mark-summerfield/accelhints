@@ -1,0 +1,21 @@
+Remaining Issues
+Type
+Title
+Forenames
+Surname
+Company
+Email
+Phone
+Mobile
+URL
+Find
+New
+Duplicate
+Update
+Delete
+Configure
+Statistics
+Export
+Open
+Save
+Quit

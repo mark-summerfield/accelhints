@@ -1,0 +1,16 @@
+Add &Top-Level Term
+Add Sub-Term &of
+Add &Child-Term of
+&Add Sibling-Term of
+&Find
+&Insert Unicode Character
+&Bold
+Ita&lic
+&Underline
+Stri&ke-out
+Su&perscript
+&Subscript
+&No Superscript or Subscript
+&Monospace
+Sans S&erif
+Se&rif

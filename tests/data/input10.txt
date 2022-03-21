@@ -1,0 +1,13 @@
+Lists
+New List
+Duplicate List
+Delete List
+Items
+New
+Rename
+Up
+Down
+Delete
+Configure
+About
+Quit

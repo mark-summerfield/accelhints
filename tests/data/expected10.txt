@@ -1,0 +1,13 @@
+Li&sts
+&New List
+&Duplicate List
+Delete &List
+&Items
+Ne&w
+&Rename
+&Up
+D&own
+D&elete
+&Configure
+&About
+&Quit

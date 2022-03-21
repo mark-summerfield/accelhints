@@ -1,0 +1,16 @@
+&Notebook
+E&dit
+&Clipboard
+&Promotion
+No&tes
+Ca&lendar
+Calendar &View
+Calendar &Goto
+N&ote
+Cl&ipboard
+&Edit
+&Search
+St&yle
+&Font
+&Alignment
+Catego&ry

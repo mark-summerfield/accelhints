@@ -1,0 +1,9 @@
+Alphabet
+Predefined Accelerators
+Max. Recursion Depth
+Max. Candidates
+Automatic Timeout
+Prompt to Save Unsaved Changes on Exit
+Restore Workspace at Startup
+Load Last File at Startup
+Show Help at Startup

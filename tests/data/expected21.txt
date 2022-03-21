@@ -1,0 +1,17 @@
+&Insert
+&Delete
+S&elect
+Me&rge Cells
+Sp&lit Cells
+&Protect Cells
+&Merge Table
+&Split Table
+&AutoFormat...
+A&utofit
+&Heading rows repeat
+&Convert
+S&ort...
+&Formula
+&Number Format...
+Table &Boundaries
+&Table Properties...

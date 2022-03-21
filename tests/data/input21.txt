@@ -1,0 +1,17 @@
+Insert
+Delete
+Select
+Merge Cells
+Split Cells
+Protect Cells
+Merge Table
+Split Table
+AutoFormat...
+Autofit
+Heading rows repeat
+Convert
+Sort...
+Formula
+Number Format...
+Table Boundaries
+Table Properties...

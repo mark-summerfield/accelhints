@@ -1,0 +1,18 @@
+G&eneral
+Remember &Geometry
+Start With Editor &Window
+Start With &Shell Window
+Automatically Hide the Find and &Replace dialog
+&Input prompt
+&Output prompt
+&Python executable
+Wor&king directory
+Show Window Information &at Startup
+&Max Tooltip Length
+Max &Lines to Scan
+&Highlighting
+&Tab width
+&Font
+On &New File
+At Start&up
+Python &Documentation

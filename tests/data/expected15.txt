@@ -1,0 +1,10 @@
+&Toolbars
+Status &Bar
+S&idebar
+St&op
+&Reload
+T&ext Size
+Page &Style
+&Character Encoding
+&Page Source
+&Full Screen

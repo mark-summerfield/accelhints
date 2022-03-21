@@ -1,0 +1,10 @@
+Toolbars
+Status Bar
+Sidebar
+Stop
+Reload
+Text Size
+Page Style
+Character Encoding
+Page Source
+Full Screen
