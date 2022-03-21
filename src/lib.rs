@@ -20,7 +20,7 @@ fn initial_weights(size: usize) -> Grid {
     for row in 0..size {
         weights.push(Vec::with_capacity(size));
         for column in 0..size {
-            // favor furthest rows and nearest columns
+            // slightly favor furthest rows and nearest columns
             weights[row].push(value - row as i16 + column as i16);
         }
     }
