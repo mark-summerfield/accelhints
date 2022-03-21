@@ -21,7 +21,7 @@ fn initial_weights(size: usize) -> Grid {
         weights.push(Vec::with_capacity(size));
         for column in 0..size {
             // favor furthest rows and nearest columns
-            weights[row].push(value - (row + column) as i16);
+            weights[row].push(value - row as i16 + column as i16);
         }
     }
     weights
@@ -67,7 +67,7 @@ where
 
 fn lines_with_accelerators(
     lines: &[&str],
-    alphabet: &Vec<char>,
+    alphabet: &[char],
     indexes: &[usize],
 ) -> Vec<String> {
     let mut accelerated = vec![];
@@ -80,14 +80,12 @@ fn lines_with_accelerators(
                 continue;
             }
             let uline = line.to_ascii_uppercase().replace('\t', " ");
-            let index = if uline.chars().next() == Some(c) {
+            let index = if uline.starts_with(c) {
                 Some(0) // first is best
+            } else if let Some(i) = uline.find(&format!(" {c}")) {
+                Some(i + 1) // skip the space to start of word
             } else {
-                if let Some(i) = uline.find(&format!(" {c}")) {
-                    Some(i + 1) // skip the space to start of word
-                } else {
-                    uline.find(c) // anywhere or nowhere
-                }
+                uline.find(c) // anywhere or nowhere
             };
             let mut line = line.to_string();
             if let Some(index) = index {
