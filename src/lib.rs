@@ -5,7 +5,11 @@ use pathfinding::prelude::{kuhn_munkres_min, Matrix};
 
 type Grid = Vec<Vec<i16>>;
 
-pub fn accelkeys(lines: &[&str], alphabet: &str) -> Vec<String> {
+pub fn accelkeys(lines: &[&str]) -> Vec<String> {
+    accelkeys_alphabet(lines, "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
+}
+
+pub fn accelkeys_alphabet(lines: &[&str], alphabet: &str) -> Vec<String> {
     let alphabet: Vec<char> = alphabet.chars().collect();
     let mut weights = initial_weights(alphabet.len());
     update_weights(lines, &alphabet, &mut weights);

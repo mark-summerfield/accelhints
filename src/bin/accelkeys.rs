@@ -2,10 +2,9 @@
 // License: GPLv3
 
 pub fn main() {
-    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
     let lines =
         ["&Undo", "Redo", "&Copy", "Cut", "Paste", "Find", "Find Again"];
-    let accels = accelkeys::accelkeys(&lines, alphabet);
+    let accels = accelkeys::accelkeys(&lines);
     dbg!(accels);
     let lines = [
         "&Bold",
@@ -24,10 +23,10 @@ pub fn main() {
         "Justify",
         "Align Right",
     ];
-    let accels = accelkeys::accelkeys(&lines, alphabet);
+    let accels = accelkeys::accelkeys(&lines);
     dbg!(accels);
     let lines =
         ["abc", "bca", "cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
-    let accels = accelkeys::accelkeys(&lines, alphabet);
+    let accels = accelkeys::accelkeys(&lines);
     dbg!(accels);
 }
