@@ -1,3 +1,37 @@
+&Undo
+&Redo
+&Copy
+Cu&t
+&Paste
+&Find
+Find &Again
+
+&Bold
+&Italic
+&Underline
+No Super- &or Sub-script
+Su&perscript
+&Subscript
+&Text Color
+&Font
+&No List
+Bullet &List
+Nu&mbered List
+&Align Left
+&Center
+&Justify
+Align &Right
+
+abc
+bca
+cab
+aab
+bbc
+cca
+&cba
+&bcb
+&acc
+
 &Lists
 &New List
 Du&plicate List

@@ -45,12 +45,15 @@ fn update_weights(lines: &[&str], alphabet: &[char], weights: &mut Grid) {
             let c = c.to_ascii_uppercase();
             if let Some(i) = find(alphabet, c) {
                 let mut weight = -2 * (row as i16);
+                let column_weight = 10 * column as i16;
                 if column == 0 {
                     weight += first;
+                } else if prev == '&' {
+                    // NOOP
                 } else if prev.is_ascii_whitespace() {
-                    weight += start_of_word + column as i16;
-                } else if prev != '&' {
-                    weight += anywhere + (10 * column as i16);
+                    weight += start_of_word + column_weight;
+                } else {
+                    weight += anywhere + column_weight;
                 }
                 if weights[row][i] > weight {
                     weights[row][i] = weight;
@@ -78,7 +81,6 @@ fn lines_with_accelerators(
     alphabet: &[char],
     indexes: &[usize],
 ) -> Vec<String> {
-    // let mut seen = HashSet<char>::new(); // TODO
     let mut accelerated = vec![];
     for (row, column) in indexes.iter().enumerate() {
         let c = alphabet[*column];
@@ -109,6 +111,7 @@ fn lines_with_accelerators(
 /// Returns a quality rating in the range 0.0 to 1.0 where 0.0 means no
 /// accelerators and 1.0 means all lines begin with an accelerator.
 pub fn quality(lines: &[String]) -> f64 {
+    // TODO check for duplicates and reduce if any accels are missing
     let first = 1.0 / lines.len() as f64;
     let word_start = first / 3.0;
     let anywhere = first / 5.0;
