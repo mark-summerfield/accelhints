@@ -1,3 +1,17 @@
+Lists
+New List
+Duplicate List
+Delete List
+Items
+New
+Rename
+Move &Up
+Move &Down
+Delete
+Configure
+About
+Quit
+
 Calculate
 Load...
 Save
@@ -96,20 +110,6 @@ Statistics
 Export
 Open
 Save
-Quit
-
-Lists
-New List
-Duplicate List
-Delete List
-Items
-New
-Rename
-Up
-Down
-Delete
-Configure
-About
 Quit
 
 Initial No

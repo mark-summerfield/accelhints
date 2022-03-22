@@ -11,6 +11,10 @@ pub fn accelkeys(lines: &[&str]) -> Vec<String> {
 
 pub fn accelkeys_alphabet(lines: &[&str], alphabet: &str) -> Vec<String> {
     let alphabet: Vec<char> = alphabet.chars().collect();
+    assert!(
+        lines.len() <= alphabet.len(),
+        "can't have more items than alphabet characters"
+    );
     let mut weights = initial_weights(alphabet.len());
     update_weights(lines, &alphabet, &mut weights);
     let weights = Matrix::from_rows(weights).unwrap();
@@ -40,13 +44,13 @@ fn update_weights(lines: &[&str], alphabet: &[char], weights: &mut Grid) {
         for (column, c) in line.chars().enumerate() {
             let c = c.to_ascii_uppercase();
             if let Some(i) = find(alphabet, c) {
-                let mut weight = -2 * row as i16;
+                let mut weight = -2 * (row as i16);
                 if column == 0 {
                     weight += first;
                 } else if prev.is_ascii_whitespace() {
-                    weight += start_of_word - column as i16;
+                    weight += start_of_word + column as i16;
                 } else if prev != '&' {
-                    weight += anywhere - column as i16;
+                    weight += anywhere + (10 * column as i16);
                 }
                 if weights[row][i] > weight {
                     weights[row][i] = weight;
@@ -74,6 +78,7 @@ fn lines_with_accelerators(
     alphabet: &[char],
     indexes: &[usize],
 ) -> Vec<String> {
+    // let mut seen = HashSet<char>::new(); // TODO
     let mut accelerated = vec![];
     for (row, column) in indexes.iter().enumerate() {
         let c = alphabet[*column];
@@ -83,7 +88,7 @@ fn lines_with_accelerators(
                 accelerated.push(line.to_string());
                 continue;
             }
-            let uline = line.to_ascii_uppercase().replace('\t', " ");
+            let uline = line.to_ascii_uppercase();
             let index = if uline.starts_with(c) {
                 Some(0) // first is best
             } else if let Some(i) = uline.find(&format!(" {c}")) {
@@ -99,4 +104,23 @@ fn lines_with_accelerators(
         }
     }
     accelerated
+}
+
+/// Returns a quality rating in the range 0.0 to 1.0 where 0.0 means no
+/// accelerators and 1.0 means all lines begin with an accelerator.
+pub fn quality(lines: &[String]) -> f64 {
+    let first = 1.0 / lines.len() as f64;
+    let word_start = first / 3.0;
+    let anywhere = first / 5.0;
+    let mut quality = 0.0;
+    for line in lines.iter() {
+        if line.starts_with('&') {
+            quality += first;
+        } else if line.contains(" &") {
+            quality += word_start;
+        } else if line.contains('&') {
+            quality += anywhere;
+        }
+    }
+    quality
 }

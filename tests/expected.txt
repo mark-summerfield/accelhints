@@ -1,3 +1,17 @@
+&Lists
+&New List
+Du&plicate List
+Delete List
+&Items
+Ne&w
+&Rename
+Move &Up
+Move &Down
+D&elete
+&Configure
+&About
+&Quit
+
 &Calculate
 &Load...
 &Save
@@ -38,22 +52,22 @@ Automatically &Save on Exit
 Restore &Workspace on Startup
 &Remember Clipboard between Sessions
 
-&Notebook
-E&dit
-&Clipboard
+Note&book
+&Edit
+Cl&ipboard
 &Promotion
-No&tes
-Ca&lendar
+N&otes
+&Calendar
 Calendar &View
 Calendar &Goto
-N&ote
-Cl&ipboard
-&Edit
+&Note
+C&lipboard
+E&dit
 &Search
 St&yle
 &Font
 &Alignment
-Catego&ry
+Ca&tegory
 
 T&ype
 &Title
@@ -76,40 +90,26 @@ E&xport
 Sa&ve
 &Quit
 
-Remaining &Issues
+&Remaining Issues
 T&ype
 &Title
 &Forenames
 &Surname
 &Company
 &Email
-&Phone
+P&hone
 &Mobile
-U&RL
-Fi&nd
-Ne&w
+&URL
+F&ind
+&New
 &Duplicate
-&Update
+U&pdate
 De&lete
 Confi&gure
 St&atistics
 E&xport
 &Open
 Sa&ve
-&Quit
-
-Li&sts
-&New List
-&Duplicate List
-Delete &List
-&Items
-Ne&w
-&Rename
-&Up
-D&own
-D&elete
-&Configure
-&About
 &Quit
 
 Initial &No

@@ -3,7 +3,7 @@
 
 pub fn main() {
     let lines =
-        ["&Undo", "Redo", "&Copy", "Cut", "Paste", "Find", "Find Again"];
+        ["Undo", "Redo", "Copy", "Cu&t", "Paste", "Find", "Find Again"];
     let accels = accelkeys::accelkeys(&lines);
     dbg!(accels);
     let lines = [
