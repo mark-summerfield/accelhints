@@ -25,7 +25,8 @@ fn edit() {
     let quality = accelkeys::quality(&actual[..]);
     assert!(quality.is_ok());
     let quality = quality.unwrap();
-    assert!(approx_equal64(quality, 0.741, 0.001), "{} != 0.741", quality);
+    let q = 0.747;
+    assert!(approx_equal64(quality, q, 0.001), "{} != {}", quality, q);
 }
 
 #[test]
@@ -71,7 +72,8 @@ fn style() {
     let quality = accelkeys::quality(&actual);
     assert!(quality.is_ok());
     let quality = quality.unwrap();
-    assert!(approx_equal64(quality, 0.708, 0.001), "{} != 0.708", quality);
+    let q = 0.71;
+    assert!(approx_equal64(quality, q, 0.001), "{} != {}", quality, q);
 }
 
 #[test]
@@ -87,5 +89,6 @@ fn pathological() {
     let quality = accelkeys::quality(&actual);
     assert!(quality.is_ok(), "{:?}", quality);
     let quality = quality.unwrap();
-    assert!(approx_equal64(quality, 0.327, 0.001), "{} != 0.327", quality);
+    let q = 0.328;
+    assert!(approx_equal64(quality, q, 0.001), "{} != {}", quality, q);
 }
