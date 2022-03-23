@@ -1,5 +1,6 @@
 src/lib.rs
-src/bin/accelkeys.rs # TODO implement same API as ~/bin/accelkeys.py
+# TODO implement same API as ~/app/accelkeys/accelkeys.py
+src/bin/accelkeys.rs
 tests/test1.rs
 tests/test2.rs
 tests/input.txt

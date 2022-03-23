@@ -10,3 +10,4 @@ lto = true
 
 [dependencies]
 pathfinding = "^3"
+anyhow = "^1"

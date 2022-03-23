@@ -1,67 +1,60 @@
 // Copyright © 2022 Mark Summerfield. All rights reserved.
 // License: GPLv3
 
-use pathfinding::prelude::{kuhn_munkres_min, Matrix};
+use anyhow::{bail, Result};
+use pathfinding::prelude::{kuhn_munkres, Matrix};
+use std::collections::HashMap;
 
-type Grid = Vec<Vec<i16>>;
+type Weight = i8;
+type Grid = Vec<Vec<Weight>>;
+type StringVec = Vec<String>;
 
-pub fn accelkeys(lines: &[&str]) -> Vec<String> {
+pub fn accelkeys(lines: &[&str]) -> Result<StringVec> {
     accelkeys_alphabet(lines, "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
 }
 
-pub fn accelkeys_alphabet(lines: &[&str], alphabet: &str) -> Vec<String> {
+pub fn accelkeys_alphabet(
+    lines: &[&str],
+    alphabet: &str,
+) -> Result<StringVec> {
     let alphabet: Vec<char> = alphabet.chars().collect();
-    assert!(
-        lines.len() <= alphabet.len(),
-        "can't have more items than alphabet characters"
-    );
-    let mut weights = initial_weights(alphabet.len());
-    update_weights(lines, &alphabet, &mut weights);
+    if lines.len() >= alphabet.len() {
+        bail!("can't have more items than alphabet characters");
+    }
+    let weights = get_weights(lines, &alphabet);
     let weights = Matrix::from_rows(weights).unwrap();
-    let (_, indexes) = kuhn_munkres_min(&weights);
+    let (_, indexes) = kuhn_munkres(&weights);
     lines_with_accelerators(lines, &alphabet, &indexes)
 }
 
-fn initial_weights(size: usize) -> Grid {
-    let value = (size * 20) as i16;
+fn get_weights(lines: &[&str], alphabet: &[char]) -> Grid {
+    let size = alphabet.len();
     let mut weights = Vec::with_capacity(size);
-    for row in 0..size {
-        weights.push(Vec::with_capacity(size));
-        for column in 0..size {
-            // slightly favor furthest rows and nearest columns
-            weights[row].push(value - row as i16 + column as i16);
-        }
+    for _ in 0..size {
+        weights.push(vec![0; size]);
     }
-    weights
-}
-
-fn update_weights(lines: &[&str], alphabet: &[char], weights: &mut Grid) {
-    let first = alphabet.len() as i16;
-    let start_of_word = first * 5;
-    let anywhere = first * 10;
     for (row, line) in lines.iter().enumerate() {
         let mut prev = '\x01';
         for (column, c) in line.chars().enumerate() {
             let c = c.to_ascii_uppercase();
             if let Some(i) = find(alphabet, c) {
-                let mut weight = -2 * (row as i16);
-                let column_weight = 10 * column as i16;
-                if column == 0 {
-                    weight += first;
+                let weight = if column == 0 {
+                    4 // first
                 } else if prev == '&' {
-                    // NOOP
+                    16 // preset
                 } else if prev.is_ascii_whitespace() {
-                    weight += start_of_word + column_weight;
+                    2 // word start
                 } else {
-                    weight += anywhere + column_weight;
-                }
-                if weights[row][i] > weight {
+                    1 // anywhere
+                };
+                if weights[row][i] < weight {
                     weights[row][i] = weight;
                 }
             }
             prev = c;
         }
     }
+    weights
 }
 
 fn find<T>(sequence: &[T], what: T) -> Option<usize>
@@ -80,7 +73,7 @@ fn lines_with_accelerators(
     lines: &[&str],
     alphabet: &[char],
     indexes: &[usize],
-) -> Vec<String> {
+) -> Result<StringVec> {
     let mut accelerated = vec![];
     for (row, column) in indexes.iter().enumerate() {
         let c = alphabet[*column];
@@ -105,25 +98,62 @@ fn lines_with_accelerators(
             accelerated.push(line);
         }
     }
-    accelerated
+    Ok(accelerated)
 }
 
 /// Returns a quality rating in the range 0.0 to 1.0 where 0.0 means no
 /// accelerators and 1.0 means all lines begin with an accelerator.
-pub fn quality(lines: &[String]) -> f64 {
-    // TODO check for duplicates and reduce if any accels are missing
-    let first = 1.0 / lines.len() as f64;
-    let word_start = first / 3.0;
-    let anywhere = first / 5.0;
-    let mut quality = 0.0;
-    for line in lines.iter() {
-        if line.starts_with('&') {
-            quality += first;
-        } else if line.contains(" &") {
-            quality += word_start;
-        } else if line.contains('&') {
-            quality += anywhere;
+pub fn quality(lines: &[String]) -> Result<f64> {
+    let mut count_for_char = HashMap::new();
+    let mut target = 0.0;
+    let mut actual = 0.0;
+    let size = lines.len();
+    for (row, line) in lines.iter().enumerate() {
+        let ideal = (25.0 * size as f64) + row as f64;
+        target += ideal;
+        let line: Vec<char> = line.chars().collect();
+        let mut factor = -1.0;
+        let mut index = line.len();
+        let mut prev = '\x01';
+        for (i, c) in line.iter().enumerate() {
+            if *c == '&' {
+                index = i + 1;
+                if i == 0 {
+                    factor = 25.0; // preset
+                    break;
+                } else if prev.is_ascii_whitespace() {
+                    factor = 5.0; // word start
+                    break;
+                } else {
+                    factor = 1.0; // anywhere; no break - keep looking
+                }
+            }
+            prev = *c;
+        }
+        if factor > 0.0 {
+            if index >= size {
+                bail!("& at end of line");
+            }
+            actual += (factor * size as f64) + row as f64 - index as f64;
+            let c = line[index];
+            if let Some(count) = count_for_char.get_mut(&c) {
+                *count += 1;
+            } else {
+                count_for_char.insert(c, 1);
+            }
         }
     }
-    quality
+    if isclose64(target, 0.0) {
+        bail!("missing lines");
+    }
+    for (c, count) in count_for_char.iter() {
+        if count > &1 {
+            bail!("&{c} occurs {count} times");
+        }
+    }
+    Ok(actual / target)
+}
+
+fn isclose64(a: f64, b: f64) -> bool {
+    (a..=(a + f64::EPSILON)).contains(&b)
 }

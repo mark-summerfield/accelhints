@@ -4,8 +4,9 @@
 pub fn main() {
     let lines =
         ["Undo", "Redo", "Copy", "Cu&t", "Paste", "Find", "Find Again"];
-    let accels = accelkeys::accelkeys(&lines);
-    dbg!(accels);
+    if let Ok(accels) = accelkeys::accelkeys(&lines) {
+        dbg!(accels);
+    }
     let lines = [
         "&Bold",
         "Italic",
@@ -23,10 +24,12 @@ pub fn main() {
         "Justify",
         "Align Right",
     ];
-    let accels = accelkeys::accelkeys(&lines);
-    dbg!(accels);
+    if let Ok(accels) = accelkeys::accelkeys(&lines) {
+        dbg!(accels);
+    }
     let lines =
         ["abc", "bca", "cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
-    let accels = accelkeys::accelkeys(&lines);
-    dbg!(accels);
+    if let Ok(accels) = accelkeys::accelkeys(&lines) {
+        dbg!(accels);
+    }
 }

@@ -1,5 +1,13 @@
 &Undo
 &Redo
+C&opy
+&Cut
+&Paste
+&Find
+Find &Again
+
+&Undo
+&Redo
 &Copy
 Cu&t
 &Paste
@@ -10,38 +18,38 @@ Find &Again
 &Italic
 &Underline
 No Super- &or Sub-script
-Su&perscript
-&Subscript
+&Superscript
+Subscri&pt
 &Text Color
 &Font
 &No List
 Bullet &List
-Nu&mbered List
+Numbere&d List
 &Align Left
 &Center
 &Justify
 Align &Right
 
-abc
-bca
-cab
+&abc
+&bca
+&cab
 aab
 bbc
 cca
-&cba
-&bcb
-&acc
+cba
+bcb
+acc
 
 &Lists
 &New List
 Du&plicate List
-Delete List
+Delete Li&st
 &Items
-Ne&w
+N&ew
 &Rename
 Move &Up
 Move &Down
-D&elete
+Dele&te
 &Configure
 &About
 &Quit
@@ -61,7 +69,7 @@ A&bout
 &Max. Recursion Depth
 Max. &Candidates
 Automatic &Timeout
-Prompt to Save &Unsaved Changes on Exit
+Prompt to Save Unsaved Changes on &Exit
 &Restore Workspace at Startup
 &Load Last File at Startup
 &Show Help at Startup
@@ -82,43 +90,43 @@ Cu&t
 
 &Basic
 &Advanced
-Automatically &Save on Exit
-Restore &Workspace on Startup
-&Remember Clipboard between Sessions
+Automatically Save on &Exit
+&Restore Workspace on Startup
+Remember &Clipboard between Sessions
 
-Note&book
+Noteboo&k
 &Edit
-Cl&ipboard
+Clip&board
 &Promotion
-N&otes
-&Calendar
+&Notes
+Ca&lendar
 Calendar &View
 Calendar &Goto
-&Note
-C&lipboard
-E&dit
-&Search
-St&yle
+N&ote
+Clipboar&d
+Ed&it
+Searc&h
+&Style
 &Font
 &Alignment
-Ca&tegory
+&Category
 
 T&ype
 &Title
-&Forenames
-&Surname
+Foren&ames
+Su&rname
 &Company
 &Email
 &Phone
 &Mobile
-U&RL
-F&ind
+UR&L
+&Find
 &New
-&Duplicate
+Dupl&icate
 &Update
-De&lete
+&Delete
 Confi&gure
-St&atistics
+&Statistics
 E&xport
 &Open
 Sa&ve
@@ -131,16 +139,16 @@ T&ype
 &Surname
 &Company
 &Email
-P&hone
+&Phone
 &Mobile
 &URL
 F&ind
 &New
 &Duplicate
-U&pdate
+Upd&ate
 De&lete
 Confi&gure
-St&atistics
+Statistics
 E&xport
 &Open
 Sa&ve
@@ -151,31 +159,31 @@ Initial &No
 &Initial Memory Size
 Mutation &Rate
 &Survival Rate
-S&tart
+St&art
 Pa&use
 &Zoom
 
-G&eneral
-Remember &Geometry
+&General
+&Remember Geometry
 Start With Editor &Window
 Start With &Shell Window
-Automatically Hide the Find and &Replace dialog
+Automati&cally Hide the Find and Replace dialog
 &Input prompt
 &Output prompt
 &Python executable
-Wor&king directory
-Show Window Information &at Startup
+Working &directory
+Show Window Information at Start&up
 &Max Tooltip Length
 Max &Lines to Scan
 &Highlighting
 &Tab width
 &Font
 On &New File
-At Start&up
-Python &Documentation
+&At Startup
+Python Docum&entation
 
-Un&do
-Red&o
+&Undo
+&Redo
 &Copy
 Cu&t
 &Paste
@@ -187,8 +195,8 @@ R&eplace Next
 &Goto Line
 Goto &Matching
 &Indent Region
-Comment &Region
-&Uncomment Region
+Unin&dent Region
+C&omment Region
 Uncomment Region
 
 Add &Top-Level Term
@@ -210,19 +218,19 @@ Se&rif
 
 &Toolbars
 Status &Bar
-S&idebar
+&Sidebar
 St&op
 &Reload
-T&ext Size
-Page &Style
+Text S&ize
+&Page Style
 &Character Encoding
-&Page Source
+P&age Source
 &Full Screen
 
-Ne&w
+&New
 &Open...
 Recent Doc&uments
-Wi&zards
+&Wizards
 &Close
 &Save
 Save &As...
@@ -231,136 +239,136 @@ Save A&ll
 &Versions...
 &Export...
 Export as PD&F...
-Se&nd
-Proper&ties...
+Send
+&Properties...
 &Digital Signatures...
-Te&mplates
+&Templates
 Preview in Web &Browser
-Pa&ge Preview
+Page Preview
 Pr&int...
-&Printer Settings...
+Printer Settin&gs...
 E&xit
 
 &Undo
-Red&o
+&Redo
 &Cut
 Cop&y
 &Paste
-Paste &Special...
+Paste Special...
 Select &Text
-Select &All
+&Select All
 Chan&ges
-Compare &Documents...
-Find and &Replace
-Na&vigator
-AutoTe&xt...
+Co&mpare Documents...
+&Find and Replace
+&Navigator
+&AutoText...
 &Exchange Database...
-&Fields...
-Foot&note...
-&Index Entry...
+Fiel&ds...
+Footnote...
+Inde&x Entry...
 &Bibliography Entry
 &Hyperlink
-Lin&ks...
-P&lug-in
-I&mageMap
-Ob&ject
+&Links...
+Plug-in
+&ImageMap
+&Object
 
 &Print Layout
 &Web Layout
 &Toolbars
-St&atus Bar
+&Status Bar
 &Input Method Status
 &Ruler
 Text &Boundaries
 &Field Shadings
-Field &Names
-Nonprinting &Characters
+Fi&eld Names
+&Nonprinting Characters
 &Hidden Paragraphs
 &Data Sources
-Full &Screen
+Full S&creen
 &Zoom
 
-Manual &Break
+&Manual Break
 Fiel&ds
-&Special Character...
-Formatting &Mark
-S&ection...
+Specia&l Character...
+Formatting Mar&k
+&Section...
 H&yperlink
 &Header
-&Footer
-F&ootnote
-Ca&ption
-Boo&kmark
-&Cross-reference...
+Footer
+Footnote
+&Caption
+&Bookmark
+Cross-reference...
 &Note...
-Scr&ipt...
-Inde&xes and Tables
-En&velope...
-F&rame...
+Script...
+&Indexes and Tables
+&Envelope...
+Frame...
 &Table...
-Hori&zontal Ruler...
-Pict&ure
+Horizontal &Ruler...
+&Picture
 Movie &and Sound
-Ob&ject
+&Object
 Floatin&g Frame
-Fi&le...
+&File...
 
 &Default Formatting
-C&haracter...
-Pa&ragraph...
+&Character...
+&Paragraph...
 &Bullets and Numbering...
 Pag&e...
 &Title Page
-&Change Case
+C&hange Case
 Co&lumns
 &Sections...
-Styles and &Formatting
+St&yles and Formatting
 A&utoFormat
-Anch&or
+Ancho&r
 &Wrap
-&Alignment
-Arra&nge
-Fl&ip
+Alig&nment
+&Arrange
+&Flip
 &Group
-Ob&ject
+&Object
 Fra&me...
-&Picture...
+P&icture...
 
 &Insert
 &Delete
-S&elect
-Me&rge Cells
-Sp&lit Cells
+&Select
+Mer&ge Cells
+Split C&ells
 &Protect Cells
 &Merge Table
-&Split Table
+Sp&lit Table
 &AutoFormat...
 A&utofit
 &Heading rows repeat
 &Convert
-S&ort...
+So&rt...
 &Formula
 &Number Format...
 Table &Boundaries
 &Table Properties...
 
-&Spellcheck...
+Spellchec&k...
 &Language
-Wor&d Count
+&Word Count
 &AutoCorrect...
 Outline &Numbering...
 &Footnotes...
 &Gallery
 Media &Player
 &Bibliography Database
-Mail Merge &Wizard...
-So&rt...
-Calcula&te
+&Mail Merge Wizard...
+&Sort...
+&Calculate
 &Update
-&Macros
+Mac&ros
 &Extension Manager...
 &XML Filter Settings...
-&Customize...
+Cus&tomize...
 &Options...
 
 &Undo
@@ -368,96 +376,96 @@ Calcula&te
 Cu&t
 &Copy
 &Paste
-Paste &Special...
+Paste Special...
 Select Te&xt
-Se&lect All
-Cha&nges
+&Select All
+Chan&ges
 Compare &Documents...
 &Find and Replace
-Na&vigator
+&Navigator
 &AutoText...
 &Exchange Database...
-F&ields...
-F&ootnote...
+Fields...
+Footnote...
 Index Entr&y...
 &Bibliography Entry
 &Hyperlink
-Lin&ks...
-Plu&g-in
-I&mageMap
-Ob&ject
+&Links...
+Plug-in
+&ImageMap
+&Object
 
 &Fields
 Specia&l Character...
 Formatting Mar&k
 &Section...
-H&yperlink
+&Hyperlink
 Hea&der
-Foot&er
-F&ootnote
-&Caption
+Foote&r
+Footnote
+Caption
 &Bookmark
-C&ross-reference...
+&Cross-reference...
 &Note...
-Scri&pt...
+Script...
 &Indexes and Tables
-En&velope...
+&Envelope...
 Fr&ame...
 &Table...
-&Horizontal Ruler...
-Pict&ure
+Hori&zontal Ruler...
+&Picture
 &Movie and Sound
-Ob&ject
+&Object
 Floatin&g Frame
 
 &Undo
-Red&o
-&Repeat
+&Redo
+Repeat
 Cu&t
 &Copy
 &Paste
-Paste &Special...
-Select &All
-Cha&nges
+Past&e Special...
+&Select All
+Chan&ges
 Co&mpare Document...
-&Find and Replace...
-Na&vigator
+Find &and Replace...
+&Navigator
 &Headers and Footers...
-Fi&ll
-&Delete Cells...
-Sh&eet
+&Fill
+&Delete Contents...
+Delete Cells...
+Sheet
 Delete Manual &Break
-Lin&ks...
-Plu&g-in
+&Links...
+Plug-in
 &ImageMap
-Ob&ject
-Object
+&Object
 
 &Undo
-Red&o
-&Repeat
+&Redo
+Repeat
 Cu&t
 &Copy
 &Paste
-Paste &Special...
-Select &All
-Cha&nges
+Past&e Special...
+&Select All
+Chan&ges
 Co&mpare Document...
-&Find and Replace...
-Na&vigator
+Find &and Replace...
+&Navigator
 &Headers and Footers...
-Fi&ll
-&Delete Cells...
-Sh&eet
+&Fill
+&Delete Contents...
+Delete Cells...
+Sheet
 Delete Manual &Break
-Lin&ks...
-Plu&g-in
+&Links...
+Plug-in
 &ImageMap
-Ob&ject
-Object
+&Object
 
-Un&do
-Red&o
+&Undo
+&Redo
 &Copy
 Cu&t
 &Paste
@@ -469,7 +477,6 @@ R&eplace Next
 &Goto Line
 Goto &Matching
 &Indent Region
-Comment &Region
-&Uncomment Region
+Unin&dent Region
+C&omment Region
 Uncomment Region
-

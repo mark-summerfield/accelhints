@@ -19,9 +19,13 @@ fn edit() {
         "Find &Again",
     ];
     let actual = accelkeys::accelkeys(&lines);
+    assert!(actual.is_ok());
+    let actual = actual.unwrap();
     assert_eq!(actual, expected);
     let quality = accelkeys::quality(&actual[..]);
-    assert!(approx_equal64(quality, 0.79, 0.001), "{} != 0.79", quality);
+    assert!(quality.is_ok());
+    let quality = quality.unwrap();
+    assert!(approx_equal64(quality, 0.741, 0.001), "{} != 0.741", quality);
 }
 
 #[test]
@@ -48,32 +52,40 @@ fn style() {
         "&Italic",
         "&Underline",
         "No Super- &or Sub-script",
-        "Su&perscript",
-        "&Subscript",
+        "&Superscript",
+        "Subscri&pt",
         "&Text Color",
         "&Font",
         "&No List",
         "Bullet &List",
-        "Nu&mbered List",
+        "Numbere&d List",
         "&Align Left",
         "&Center",
         "&Justify",
         "Align &Right",
     ];
     let actual = accelkeys::accelkeys(&lines);
+    assert!(actual.is_ok());
+    let actual = actual.unwrap();
     assert_eq!(actual, expected);
     let quality = accelkeys::quality(&actual);
-    assert!(approx_equal64(quality, 0.76, 0.001), "{} != 0.76", quality);
+    assert!(quality.is_ok());
+    let quality = quality.unwrap();
+    assert!(approx_equal64(quality, 0.708, 0.001), "{} != 0.708", quality);
 }
 
 #[test]
-fn pathalogical() {
+fn pathological() {
     let lines =
         ["abc", "bca", "cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
     let expected =
-        ["abc", "bca", "cab", "aab", "bbc", "cca", "&cba", "&bcb", "&acc"];
+        ["&abc", "&bca", "&cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
     let actual = accelkeys::accelkeys(&lines);
+    assert!(actual.is_ok());
+    let actual = actual.unwrap();
     assert_eq!(actual, expected);
     let quality = accelkeys::quality(&actual);
-    assert!(approx_equal64(quality, 0.333, 0.001), "{} != 0.33", quality);
+    assert!(quality.is_ok(), "{:?}", quality);
+    let quality = quality.unwrap();
+    assert!(approx_equal64(quality, 0.327, 0.001), "{} != 0.327", quality);
 }

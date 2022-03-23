@@ -13,6 +13,8 @@ fn files() {
         let input: Vec<&str> = inputs[i].split('\n').collect();
         let expected: Vec<&str> = expecteds[i].split('\n').collect();
         let actual = accelkeys::accelkeys(&input);
+        assert!(actual.is_ok());
+        let actual = actual.unwrap();
         assert_eq!(actual, expected, "list #{}", i + 1);
     }
 }
