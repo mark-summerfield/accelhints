@@ -41,7 +41,7 @@ fn get_weights(lines: &[&str], alphabet: &[char]) -> Grid {
                 let weight = if column == 0 {
                     4 // first
                 } else if prev == '&' {
-                    16 // preset
+                    99 // preset
                 } else if prev.is_ascii_whitespace() {
                     2 // word start
                 } else {
@@ -131,10 +131,11 @@ pub fn quality(lines: &[String]) -> Result<f64> {
             prev = *c;
         }
         if factor > 0.0 {
-            if index >= size {
+            if index >= line.len() {
                 bail!("& at end of line");
             }
-            actual += (factor * size as f64) + row as f64 - index as f64;
+            actual +=
+                (factor * size as f64) + row as f64 - ((index - 1) as f64);
             let c = line[index];
             if let Some(count) = count_for_char.get_mut(&c) {
                 *count += 1;

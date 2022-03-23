@@ -135,20 +135,20 @@ Sa&ve
 &Remaining Issues
 T&ype
 &Title
-&Forenames
+Forenames
 &Surname
 &Company
 &Email
 &Phone
 &Mobile
-&URL
-F&ind
+UR&L
+&Find
 &New
-&Duplicate
-Upd&ate
-De&lete
+Duplic&ate
+&Update
+&Delete
 Confi&gure
-Statistics
+Stat&istics
 E&xport
 &Open
 Sa&ve
@@ -216,20 +216,20 @@ Su&perscript
 Sans S&erif
 Se&rif
 
-&Toolbars
+Toolb&ars
 Status &Bar
-&Sidebar
-St&op
+Si&debar
+&Stop
 &Reload
-Text S&ize
+&Text Size
 &Page Style
 &Character Encoding
-P&age Source
+Pag&e Source
 &Full Screen
 
 &New
 &Open...
-Recent Doc&uments
+Recent Docu&ments
 &Wizards
 &Close
 &Save
@@ -244,9 +244,9 @@ Send
 &Digital Signatures...
 &Templates
 Preview in Web &Browser
-Page Preview
+Pa&ge Preview
 Pr&int...
-Printer Settin&gs...
+Printer Settings...
 E&xit
 
 &Undo
@@ -258,19 +258,19 @@ Paste Special...
 Select &Text
 &Select All
 Chan&ges
-Co&mpare Documents...
+Compare &Documents...
 &Find and Replace
 &Navigator
 &AutoText...
 &Exchange Database...
-Fiel&ds...
+Fields...
 Footnote...
-Inde&x Entry...
+&Index Entry...
 &Bibliography Entry
 &Hyperlink
 &Links...
 Plug-in
-&ImageMap
+I&mageMap
 &Object
 
 &Print Layout
@@ -281,7 +281,7 @@ Plug-in
 &Ruler
 Text &Boundaries
 &Field Shadings
-Fi&eld Names
+Field N&ames
 &Nonprinting Characters
 &Hidden Paragraphs
 &Data Sources
@@ -296,10 +296,10 @@ Formatting Mar&k
 H&yperlink
 &Header
 Footer
-Footnote
-&Caption
+&Footnote
+C&aption
 &Bookmark
-Cross-reference...
+&Cross-reference...
 &Note...
 Script...
 &Indexes and Tables
@@ -308,10 +308,10 @@ Frame...
 &Table...
 Horizontal &Ruler...
 &Picture
-Movie &and Sound
+Movie and So&und
 &Object
 Floatin&g Frame
-&File...
+File...
 
 &Default Formatting
 &Character...
@@ -320,39 +320,39 @@ Floatin&g Frame
 Pag&e...
 &Title Page
 C&hange Case
-Co&lumns
+Col&umns
 &Sections...
 St&yles and Formatting
-A&utoFormat
+AutoFor&mat
 Ancho&r
 &Wrap
 Alig&nment
 &Arrange
-&Flip
+F&lip
 &Group
 &Object
-Fra&me...
+&Frame...
 P&icture...
 
 &Insert
 &Delete
 &Select
-Mer&ge Cells
+&Merge Cells
 Split C&ells
 &Protect Cells
-&Merge Table
+Mer&ge Table
 Sp&lit Table
-&AutoFormat...
-A&utofit
+AutoFo&rmat...
+&Autofit
 &Heading rows repeat
 &Convert
-So&rt...
+S&ort...
 &Formula
 &Number Format...
 Table &Boundaries
 &Table Properties...
 
-Spellchec&k...
+Spellc&heck...
 &Language
 &Word Count
 &AutoCorrect...
@@ -361,14 +361,14 @@ Outline &Numbering...
 &Gallery
 Media &Player
 &Bibliography Database
-&Mail Merge Wizard...
+Mail Merge Wizar&d...
 &Sort...
 &Calculate
 &Update
-Mac&ros
+&Macros
 &Extension Manager...
 &XML Filter Settings...
-Cus&tomize...
+Custom&ize...
 &Options...
 
 &Undo
@@ -387,12 +387,12 @@ Compare &Documents...
 &Exchange Database...
 Fields...
 Footnote...
-Index Entr&y...
+&Index Entry...
 &Bibliography Entry
 &Hyperlink
 &Links...
 Plug-in
-&ImageMap
+I&mageMap
 &Object
 
 &Fields
@@ -401,7 +401,7 @@ Formatting Mar&k
 &Section...
 &Hyperlink
 Hea&der
-Foote&r
+Footer
 Footnote
 Caption
 &Bookmark
@@ -412,7 +412,7 @@ Script...
 &Envelope...
 Fr&ame...
 &Table...
-Hori&zontal Ruler...
+Horizontal &Ruler...
 &Picture
 &Movie and Sound
 &Object
@@ -420,21 +420,21 @@ Floatin&g Frame
 
 &Undo
 &Redo
-Repeat
+R&epeat
 Cu&t
 &Copy
 &Paste
-Past&e Special...
-&Select All
+Paste Special...
+Select All
 Chan&ges
 Co&mpare Document...
 Find &and Replace...
 &Navigator
 &Headers and Footers...
 &Fill
-&Delete Contents...
-Delete Cells...
-Sheet
+Delete Contents...
+&Delete Cells...
+&Sheet
 Delete Manual &Break
 &Links...
 Plug-in
@@ -443,21 +443,21 @@ Plug-in
 
 &Undo
 &Redo
-Repeat
+R&epeat
 Cu&t
 &Copy
 &Paste
-Past&e Special...
-&Select All
+Paste Special...
+Select All
 Chan&ges
 Co&mpare Document...
 Find &and Replace...
 &Navigator
 &Headers and Footers...
 &Fill
-&Delete Contents...
-Delete Cells...
-Sheet
+Delete Contents...
+&Delete Cells...
+&Sheet
 Delete Manual &Break
 &Links...
 Plug-in
@@ -480,3 +480,4 @@ Goto &Matching
 Unin&dent Region
 C&omment Region
 Uncomment Region
+

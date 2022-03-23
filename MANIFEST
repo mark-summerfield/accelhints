@@ -1,5 +1,4 @@
 src/lib.rs
-# TODO implement same API as ~/app/accelkeys/accelkeys.py
 src/bin/accelkeys.rs
 tests/test1.rs
 tests/test2.rs
@@ -7,5 +6,7 @@ tests/input.txt
 tests/expected.txt
 
 Cargo.toml
+
+# see also ~/app/accelkeys/accelkeys.py
 
 # vim: syn=yaml
