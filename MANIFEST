@@ -3,7 +3,8 @@ src/bin/accelhints.rs
 tests/test1.rs
 tests/test2.rs
 tests/input.txt
-tests/expected.txt
+tests/expected-rs.txt
+tests/expected-py.txt
 py/accelhints.py
 py/test_accelhints.py
 
