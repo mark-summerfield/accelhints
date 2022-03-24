@@ -1,7 +1,18 @@
+cargo-features = ["strip"]
+
 [package]
 name = "accelhints"
 version = "1.0.0"
 edition = "2021"
+publish = true
+authors = [ "Mark Summerfield <mark@qtrac.eu>",]
+include = [ "Cargo.toml", "src/**/*.rs", "test/**/*.rs", "py/*.py"]
+description = "Accelhints is a library for inserting keyboard Alt-key accelerators (i.e., '&'s) in a slice of items (e.g., menu items or dialog labels)."
+homepage = "https://github.com/mark-summerfield/accelhints"
+readme = "README.md"
+keywords = [ "alt", "accelerator", "mnemonic", "gui", "keyboard",]
+categories = [ "accessibility", "command-line-utilities", "development-tools", "gui",]
+license = "GPL-3.0-or-later"
 
 [profile.release]
 strip = true
