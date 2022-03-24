@@ -1,6 +1,22 @@
 // Copyright © 2022 Mark Summerfield. All rights reserved.
 // License: GPLv3
 
+/*!
+
+Accelhints is a library for inserting keyboard Alt-key accelerators (i.e.,
+'&'s) in a slice of items (e.g., menu items or dialog labels).
+
+There is also a Python 3 version in the `py` subdirectory which uses the
+same algorithm but nonetheless produces slightly different and slightly
+better results. (Diff `tests/expected-rs.txt` with `tests/expected-py.txt`
+to see the differences.
+
+# License
+
+Accelhints is free open source software (FOSS) licensed under the GNU
+General Public License version 3 (GPLv3).
+*/
+
 use anyhow::{bail, Result};
 use pathfinding::prelude::{kuhn_munkres, Matrix};
 use std::collections::HashMap;
@@ -9,11 +25,20 @@ type Weight = i8;
 type Grid = Vec<Vec<Weight>>;
 type StringVec = Vec<String>;
 
-pub fn accelkeys(lines: &[&str]) -> Result<StringVec> {
-    accelkeys_alphabet(lines, "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
+/// Accepts a slice (e.g., Vec<&str>) of items, e.g., menu items or dialog
+/// labels and returns an analogous Vec<String> with '&'s inserted whereever
+/// possible to signify keyboard Alt-key accelerators.
+///
+/// See also accelhints_alphabet() and quality().
+pub fn accelhints(lines: &[&str]) -> Result<StringVec> {
+    accelhints_alphabet(lines, "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
 }
 
-pub fn accelkeys_alphabet(
+/// Does the same as accelhints() but also accepts an alphabet (which must
+/// all be uppercase) from which accelerators are chosen.
+///
+/// See also accelhints() and quality().
+pub fn accelhints_alphabet(
     lines: &[&str],
     alphabet: &str,
 ) -> Result<StringVec> {
@@ -103,6 +128,8 @@ fn lines_with_accelerators(
 
 /// Returns a quality rating in the range 0.0 to 1.0 where 0.0 means no
 /// accelerators and 1.0 means all lines begin with an accelerator.
+///
+/// See also accelhints() and accelhints_alphabet().
 pub fn quality(lines: &[String]) -> Result<f64> {
     let mut count_for_char = HashMap::new();
     let mut target = 0.0;

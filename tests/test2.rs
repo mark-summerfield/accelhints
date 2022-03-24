@@ -16,7 +16,7 @@ fn files() {
         trim_empty(&mut input);
         let mut expected: Vec<&str> = expecteds[i].split('\n').collect();
         trim_empty(&mut expected);
-        let actual = accelkeys::accelkeys(&input);
+        let actual = accelhints::accelhints(&input);
         assert!(actual.is_ok());
         let actual = actual.unwrap();
         assert_eq!(actual, expected, "list #{}", i + 1);

@@ -18,11 +18,11 @@ fn edit() {
         "&Find",
         "Find &Again",
     ];
-    let actual = accelkeys::accelkeys(&lines);
+    let actual = accelhints::accelhints(&lines);
     assert!(actual.is_ok());
     let actual = actual.unwrap();
     assert_eq!(actual, expected);
-    let quality = accelkeys::quality(&actual[..]);
+    let quality = accelhints::quality(&actual[..]);
     assert!(quality.is_ok());
     let quality = quality.unwrap();
     let q = 0.747;
@@ -65,11 +65,11 @@ fn style() {
         "&Justify",
         "Align &Right",
     ];
-    let actual = accelkeys::accelkeys(&lines);
+    let actual = accelhints::accelhints(&lines);
     assert!(actual.is_ok());
     let actual = actual.unwrap();
     assert_eq!(actual, expected);
-    let quality = accelkeys::quality(&actual);
+    let quality = accelhints::quality(&actual);
     assert!(quality.is_ok());
     let quality = quality.unwrap();
     let q = 0.71;
@@ -82,11 +82,11 @@ fn pathological() {
         ["abc", "bca", "cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
     let expected =
         ["&abc", "&bca", "&cab", "aab", "bbc", "cca", "cba", "bcb", "acc"];
-    let actual = accelkeys::accelkeys(&lines);
+    let actual = accelhints::accelhints(&lines);
     assert!(actual.is_ok());
     let actual = actual.unwrap();
     assert_eq!(actual, expected);
-    let quality = accelkeys::quality(&actual);
+    let quality = accelhints::quality(&actual);
     assert!(quality.is_ok(), "{:?}", quality);
     let quality = quality.unwrap();
     let q = 0.328;

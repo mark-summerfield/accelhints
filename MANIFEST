@@ -1,12 +1,14 @@
 src/lib.rs
-src/bin/accelkeys.rs
+src/bin/accelhints.rs
 tests/test1.rs
 tests/test2.rs
 tests/input.txt
 tests/expected.txt
+py/accelhints.py
+py/test_accelhints.py
 
 Cargo.toml
 
-# see also ~/app/accelkeys/accelkeys.py
+st.sh
 
 # vim: syn=yaml

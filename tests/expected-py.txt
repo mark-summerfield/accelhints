@@ -1,0 +1,482 @@
+&Undo
+&Redo
+&Copy
+Cu&t
+&Paste
+&Find
+Find &Again
+
+&Undo
+&Redo
+&Copy
+Cu&t
+&Paste
+&Find
+Find &Again
+
+&Bold
+&Italic
+&Underline
+No Super- &or Sub-script
+&Superscript
+Subscri&pt
+&Text Color
+&Font
+&No List
+Bullet &List
+Numb&ered List
+&Align Left
+&Center
+&Justify
+Align &Right
+
+abc
+&bca
+&cab
+&aab
+bbc
+cca
+cba
+bcb
+acc
+
+&Lists
+&New List
+Duplicate Li&st
+Dele&te List
+&Items
+Ne&w
+&Rename
+Move &Up
+Move &Down
+D&elete
+&Configure
+&About
+&Quit
+
+&Calculate
+&Load...
+&Save
+Save &As...
+Copy &to Clipboard
+Set &Options...
+&Help
+A&bout
+&Quit
+
+&Alphabet
+&Predefined Accelerators
+&Max. Recursion Depth
+Max. &Candidates
+Automatic &Timeout
+Prompt to Save &Unsaved Changes on Exit
+&Restore Workspace at Startup
+&Load Last File at Startup
+&Show Help at Startup
+
+&Add
+&Edit
+&Delete
+
+&Delete
+&Edit
+&Add
+
+Cu&t
+&Copy
+&Paste
+&Find and Replace
+&Replace
+
+&Basic
+&Advanced
+Automatically &Save on Exit
+&Restore Workspace on Startup
+Remember &Clipboard between Sessions
+
+&Notebook
+&Edit
+&Clipboard
+&Promotion
+N&otes
+Calen&dar
+Calendar &View
+Calendar &Goto
+No&te
+Clipboa&rd
+Ed&it
+&Search
+Sty&le
+&Font
+&Alignment
+Categor&y
+
+T&ype
+&Title
+Fo&renames
+&Surname
+&Company
+&Email
+&Phone
+&Mobile
+&URL
+&Find
+&New
+&Duplicate
+Upd&ate
+De&lete
+Confi&gure
+Stat&istics
+E&xport
+&Open
+Sa&ve
+&Quit
+
+&Remaining Issues
+T&ype
+&Title
+&Forenames
+&Surname
+&Company
+&Email
+&Phone
+&Mobile
+&URL
+F&ind
+&New
+&Duplicate
+Upd&ate
+De&lete
+Confi&gure
+Statistics
+E&xport
+&Open
+Sa&ve
+&Quit
+
+Initial &No
+&Max Supportable No
+&Initial Memory Size
+Mutation &Rate
+&Survival Rate
+St&art
+Pa&use
+&Zoom
+
+&General
+&Remember Geometry
+Start With Editor &Window
+Start With &Shell Window
+Automati&cally Hide the Find and Replace dialog
+&Input prompt
+&Output prompt
+&Python executable
+Working &directory
+Show Window Information at Start&up
+&Max Tooltip Length
+Max &Lines to Scan
+&Highlighting
+&Tab width
+&Font
+On &New File
+&At Startup
+Python Docum&entation
+
+&Undo
+&Redo
+&Copy
+Cu&t
+&Paste
+Select &All
+Comp&lete
+&Find
+Find &Next
+R&eplace Next
+&Goto Line
+Goto &Matching
+&Indent Region
+Unin&dent Region
+C&omment Region
+Uncomment Region
+
+Add &Top-Level Term
+Add Sub-Term &of
+Add &Child-Term of
+&Add Sibling-Term of
+&Find
+&Insert Unicode Character
+&Bold
+Ita&lic
+&Underline
+Stri&ke-out
+Su&perscript
+&Subscript
+&No Superscript or Subscript
+&Monospace
+Sans S&erif
+Se&rif
+
+&Toolbars
+Status &Bar
+&Sidebar
+St&op
+&Reload
+Text S&ize
+&Page Style
+&Character Encoding
+P&age Source
+&Full Screen
+
+&New
+&Open...
+Recent Doc&uments
+&Wizards
+&Close
+&Save
+Save &As...
+Save A&ll
+&Reload
+&Versions...
+&Export...
+Export as PD&F...
+Send
+&Properties...
+&Digital Signatures...
+&Templates
+Preview in Web &Browser
+Page Preview
+Pr&int...
+Printer Settin&gs...
+E&xit
+
+&Undo
+&Redo
+&Cut
+Cop&y
+&Paste
+Paste Special...
+Select &Text
+&Select All
+Chan&ges
+Co&mpare Documents...
+&Find and Replace
+&Navigator
+&AutoText...
+&Exchange Database...
+Fiel&ds...
+Footnote...
+Inde&x Entry...
+&Bibliography Entry
+&Hyperlink
+&Links...
+Plug-in
+&ImageMap
+&Object
+
+&Print Layout
+&Web Layout
+&Toolbars
+&Status Bar
+&Input Method Status
+&Ruler
+Text &Boundaries
+&Field Shadings
+Fi&eld Names
+&Nonprinting Characters
+&Hidden Paragraphs
+&Data Sources
+Full S&creen
+&Zoom
+
+&Manual Break
+Fiel&ds
+Specia&l Character...
+Formatting Mar&k
+&Section...
+H&yperlink
+&Header
+Footer
+Footnote
+&Caption
+&Bookmark
+Cross-reference...
+&Note...
+Script...
+&Indexes and Tables
+&Envelope...
+Frame...
+&Table...
+Horizontal &Ruler...
+&Picture
+Movie &and Sound
+&Object
+Floatin&g Frame
+&File...
+
+&Default Formatting
+&Character...
+&Paragraph...
+&Bullets and Numbering...
+Pag&e...
+&Title Page
+C&hange Case
+Co&lumns
+&Sections...
+St&yles and Formatting
+A&utoFormat
+Ancho&r
+&Wrap
+Alig&nment
+&Arrange
+&Flip
+&Group
+&Object
+Fra&me...
+P&icture...
+
+&Insert
+&Delete
+&Select
+Mer&ge Cells
+Split C&ells
+&Protect Cells
+&Merge Table
+Sp&lit Table
+&AutoFormat...
+A&utofit
+&Heading rows repeat
+&Convert
+So&rt...
+&Formula
+&Number Format...
+Table &Boundaries
+&Table Properties...
+
+Spellchec&k...
+&Language
+&Word Count
+&AutoCorrect...
+Outline &Numbering...
+&Footnotes...
+&Gallery
+Media &Player
+&Bibliography Database
+&Mail Merge Wizard...
+&Sort...
+&Calculate
+&Update
+Mac&ros
+&Extension Manager...
+&XML Filter Settings...
+Cus&tomize...
+&Options...
+
+&Undo
+&Redo
+Cu&t
+&Copy
+&Paste
+Paste Special...
+Select Te&xt
+&Select All
+Chan&ges
+Compare &Documents...
+&Find and Replace
+&Navigator
+&AutoText...
+&Exchange Database...
+Fields...
+Footnote...
+Index Entr&y...
+&Bibliography Entry
+&Hyperlink
+&Links...
+Plug-in
+&ImageMap
+&Object
+
+&Fields
+Specia&l Character...
+Formatting Mar&k
+&Section...
+&Hyperlink
+Hea&der
+Foote&r
+Footnote
+Caption
+&Bookmark
+&Cross-reference...
+&Note...
+Script...
+&Indexes and Tables
+&Envelope...
+Fr&ame...
+&Table...
+Hori&zontal Ruler...
+&Picture
+&Movie and Sound
+&Object
+Floatin&g Frame
+
+&Undo
+&Redo
+Repeat
+Cu&t
+&Copy
+&Paste
+Past&e Special...
+&Select All
+Chan&ges
+Co&mpare Document...
+Find &and Replace...
+&Navigator
+&Headers and Footers...
+&Fill
+&Delete Contents...
+Delete Cells...
+Sheet
+Delete Manual &Break
+&Links...
+Plug-in
+&ImageMap
+&Object
+
+&Undo
+&Redo
+Repeat
+Cu&t
+&Copy
+&Paste
+Past&e Special...
+&Select All
+Chan&ges
+Co&mpare Document...
+Find &and Replace...
+&Navigator
+&Headers and Footers...
+&Fill
+&Delete Contents...
+Delete Cells...
+Sheet
+Delete Manual &Break
+&Links...
+Plug-in
+&ImageMap
+&Object
+
+&Undo
+&Redo
+&Copy
+Cu&t
+&Paste
+Select &All
+Comp&lete
+&Find
+Find &Next
+R&eplace Next
+&Goto Line
+Goto &Matching
+&Indent Region
+Unin&dent Region
+C&omment Region
+Uncomment Region

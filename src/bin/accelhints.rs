@@ -9,7 +9,7 @@ fn main() {
     for arg in env::args().skip(1) {
         match &arg[..] {
             "-h" | "--help" => {
-                println!("accelkeys [-q|--quality] in.txt");
+                println!("accelhints [-q|--quality] in.txt");
                 process::exit(1);
             }
             "-q" | "--quality" => show_quality = true,
@@ -48,13 +48,13 @@ fn process_text(text: &str, show_quality: bool) {
                 lines.push(line);
             }
         }
-        match accelkeys::accelkeys(&lines) {
+        match accelhints::accelhints(&lines) {
             Ok(accelerated) => {
                 for line in accelerated.iter() {
                     println!("{line}");
                 }
                 if show_quality {
-                    match accelkeys::quality(&accelerated) {
+                    match accelhints::quality(&accelerated) {
                         Ok(quality) => {
                             let quality = quality * 100.0;
                             println!("# Quality = {quality:.0}%")
